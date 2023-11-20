@@ -1,0 +1,225 @@
+onednn_verbose,info,oneDNN v3.3.0 (commit 282a107d6332602f23696a3a442278492fe8696b)
+onednn_verbose,info,cpu,runtime:threadpool,nthr:56
+onednn_verbose,info,cpu,isa:Intel AVX-512 with float16, Intel DL Boost and bfloat16 support and Intel AMX with bfloat16 and 8-bit integer support
+onednn_verbose,info,gpu,runtime:DPC++
+onednn_verbose,info,gpu,engine,0,backend:Level Zero,name:Intel(R) Data Center GPU Max 1550,driver_version:1.3.26918,binary_kernels:enabled
+onednn_verbose,info,gpu,engine,1,backend:Level Zero,name:Intel(R) Data Center GPU Max 1550,driver_version:1.3.26918,binary_kernels:enabled
+onednn_verbose,info,gpu,engine,2,backend:Level Zero,name:Intel(R) Data Center GPU Max 1550,driver_version:1.3.26918,binary_kernels:enabled
+onednn_verbose,info,gpu,engine,3,backend:Level Zero,name:Intel(R) Data Center GPU Max 1550,driver_version:1.3.26918,binary_kernels:enabled
+onednn_verbose,info,gpu,engine,4,backend:Level Zero,name:Intel(R) Data Center GPU Max 1550,driver_version:1.3.26918,binary_kernels:enabled
+onednn_verbose,info,gpu,engine,5,backend:Level Zero,name:Intel(R) Data Center GPU Max 1550,driver_version:1.3.26918,binary_kernels:enabled
+onednn_verbose,info,gpu,engine,6,backend:Level Zero,name:Intel(R) Data Center GPU Max 1550,driver_version:1.3.26918,binary_kernels:enabled
+onednn_verbose,info,gpu,engine,7,backend:Level Zero,name:Intel(R) Data Center GPU Max 1550,driver_version:1.3.26918,binary_kernels:enabled
+onednn_verbose,info,graph,backend,0:dnnl_backend
+onednn_verbose,info,experimental features are enabled
+onednn_verbose,info,use batch_normalization stats one pass is enabled
+onednn_verbose,primitive,info,template:operation,engine,primitive,implementation,prop_kind,memory_descriptors,attributes,auxiliary,problem_desc,exec_time
+onednn_verbose,graph,info,template:operation,engine,partition_id,partition_kind,op_names,data_formats,logical_tensors,fpmath_mode,backend,exec_time
+onednn_verbose,primitive,exec,gpu:0,matmul,jit:gemm:any,undef,src_f32::blocked:ab::f0 wei_f32::blocked:ba::f0 dst_f32::blocked:ab::f0,attr-scratchpad:user ,,8x64:64x10,0.50293
+onednn_verbose,primitive,exec,gpu:0,matmul,jit:gemm:any,undef,src_f32::blocked:ab::f0 wei_f32::blocked:ba::f0 bia_f32::blocked:ab::f0_mask2 dst_f32::blocked:ab::f0,attr-scratchpad:user ,,8x10:10x1024,0.447998
+onednn_verbose,primitive,exec,gpu:0,matmul,jit:gemm:any,undef,src_f32::blocked:ab::f0 wei_f32::blocked:ba::f0 dst_f32::blocked:ab::f0,attr-scratchpad:user ,,8x10:10x64,0.438965
+onednn_verbose,primitive,exec,gpu:0,matmul,jit:gemm:any,undef,src_f32::blocked:ab::f0 wei_f32::blocked:ba::f0 dst_f32::blocked:ab::f0,attr-scratchpad:user ,,8x64:64x1024,0.406006
+onednn_verbose,primitive,exec,gpu:0,matmul,jit:gemm:any,undef,src_f32::blocked:ab::f0 wei_f32::blocked:ba::f0 bia_f32::blocked:ab::f0_mask2 dst_f32::blocked:ab::f0,attr-scratchpad:user ,,8x1024:1024x10,0.473145
+[W kineto_shim.cpp:387] Profiler is not initialized: skipping step() invocation
+onednn_verbose,primitive,exec,gpu:0,matmul,jit:gemm:any,undef,src_f32::blocked:ab::f0 wei_f32::blocked:ba::f0 dst_f32::blocked:ab::f0,attr-scratchpad:user ,,8x64:64x10,0.0500488
+onednn_verbose,primitive,exec,gpu:0,matmul,jit:gemm:any,undef,src_f32::blocked:ab::f0 wei_f32::blocked:ba::f0 bia_f32::blocked:ab::f0_mask2 dst_f32::blocked:ab::f0,attr-scratchpad:user ,,8x10:10x1024,0.0449219
+onednn_verbose,primitive,exec,gpu:0,matmul,jit:gemm:any,undef,src_f32::blocked:ab::f0 wei_f32::blocked:ba::f0 dst_f32::blocked:ab::f0,attr-scratchpad:user ,,8x10:10x64,0.0368652
+onednn_verbose,primitive,exec,gpu:0,matmul,jit:gemm:any,undef,src_f32::blocked:ab::f0 wei_f32::blocked:ba::f0 dst_f32::blocked:ab::f0,attr-scratchpad:user ,,8x64:64x1024,0.0349121
+onednn_verbose,primitive,exec,gpu:0,matmul,jit:gemm:any,undef,src_f32::blocked:ab::f0 wei_f32::blocked:ba::f0 bia_f32::blocked:ab::f0_mask2 dst_f32::blocked:ab::f0,attr-scratchpad:user ,,8x1024:1024x10,0.0510254
+[W kineto_shim.cpp:387] Profiler is not initialized: skipping step() invocation
+onednn_verbose,primitive,exec,gpu:0,matmul,jit:gemm:any,undef,src_f32::blocked:ab::f0 wei_f32::blocked:ba::f0 dst_f32::blocked:ab::f0,attr-scratchpad:user ,,8x64:64x10,0.0371094
+onednn_verbose,primitive,exec,gpu:0,matmul,jit:gemm:any,undef,src_f32::blocked:ab::f0 wei_f32::blocked:ba::f0 bia_f32::blocked:ab::f0_mask2 dst_f32::blocked:ab::f0,attr-scratchpad:user ,,8x10:10x1024,0.0368652
+onednn_verbose,primitive,exec,gpu:0,matmul,jit:gemm:any,undef,src_f32::blocked:ab::f0 wei_f32::blocked:ba::f0 dst_f32::blocked:ab::f0,attr-scratchpad:user ,,8x10:10x64,0.0368652
+onednn_verbose,primitive,exec,gpu:0,matmul,jit:gemm:any,undef,src_f32::blocked:ab::f0 wei_f32::blocked:ba::f0 dst_f32::blocked:ab::f0,attr-scratchpad:user ,,8x64:64x1024,0.0310059
+onednn_verbose,primitive,exec,gpu:0,matmul,jit:gemm:any,undef,src_f32::blocked:ab::f0 wei_f32::blocked:ba::f0 bia_f32::blocked:ab::f0_mask2 dst_f32::blocked:ab::f0,attr-scratchpad:user ,,8x1024:1024x10,0.046875
+[W kineto_shim.cpp:387] Profiler is not initialized: skipping step() invocation
+onednn_verbose,primitive,exec,gpu:0,matmul,jit:gemm:any,undef,src_f32::blocked:ab::f0 wei_f32::blocked:ba::f0 dst_f32::blocked:ab::f0,attr-scratchpad:user ,,8x64:64x10,0.0351562
+onednn_verbose,primitive,exec,gpu:0,matmul,jit:gemm:any,undef,src_f32::blocked:ab::f0 wei_f32::blocked:ba::f0 bia_f32::blocked:ab::f0_mask2 dst_f32::blocked:ab::f0,attr-scratchpad:user ,,8x10:10x1024,0.0371094
+onednn_verbose,primitive,exec,gpu:0,matmul,jit:gemm:any,undef,src_f32::blocked:ab::f0 wei_f32::blocked:ba::f0 dst_f32::blocked:ab::f0,attr-scratchpad:user ,,8x10:10x64,0.0351562
+onednn_verbose,primitive,exec,gpu:0,matmul,jit:gemm:any,undef,src_f32::blocked:ab::f0 wei_f32::blocked:ba::f0 dst_f32::blocked:ab::f0,attr-scratchpad:user ,,8x64:64x1024,0.0310059
+onednn_verbose,primitive,exec,gpu:0,matmul,jit:gemm:any,undef,src_f32::blocked:ab::f0 wei_f32::blocked:ba::f0 bia_f32::blocked:ab::f0_mask2 dst_f32::blocked:ab::f0,attr-scratchpad:user ,,8x1024:1024x10,0.052002
+[W kineto_shim.cpp:387] Profiler is not initialized: skipping step() invocation
+onednn_verbose,primitive,exec,gpu:0,matmul,jit:gemm:any,undef,src_f32::blocked:ab::f0 wei_f32::blocked:ba::f0 dst_f32::blocked:ab::f0,attr-scratchpad:user ,,8x64:64x10,0.0339355
+onednn_verbose,primitive,exec,gpu:0,matmul,jit:gemm:any,undef,src_f32::blocked:ab::f0 wei_f32::blocked:ba::f0 bia_f32::blocked:ab::f0_mask2 dst_f32::blocked:ab::f0,attr-scratchpad:user ,,8x10:10x1024,0.0371094
+onednn_verbose,primitive,exec,gpu:0,matmul,jit:gemm:any,undef,src_f32::blocked:ab::f0 wei_f32::blocked:ba::f0 dst_f32::blocked:ab::f0,attr-scratchpad:user ,,8x10:10x64,0.0341797
+onednn_verbose,primitive,exec,gpu:0,matmul,jit:gemm:any,undef,src_f32::blocked:ab::f0 wei_f32::blocked:ba::f0 dst_f32::blocked:ab::f0,attr-scratchpad:user ,,8x64:64x1024,0.0310059
+onednn_verbose,primitive,exec,gpu:0,matmul,jit:gemm:any,undef,src_f32::blocked:ab::f0 wei_f32::blocked:ba::f0 bia_f32::blocked:ab::f0_mask2 dst_f32::blocked:ab::f0,attr-scratchpad:user ,,8x1024:1024x10,0.0441895
+[W kineto_shim.cpp:387] Profiler is not initialized: skipping step() invocation
+onednn_verbose,primitive,exec,gpu:0,matmul,jit:gemm:any,undef,src_f32::blocked:ab::f0 wei_f32::blocked:ba::f0 dst_f32::blocked:ab::f0,attr-scratchpad:user ,,8x64:64x10,0.0339355
+onednn_verbose,primitive,exec,gpu:0,matmul,jit:gemm:any,undef,src_f32::blocked:ab::f0 wei_f32::blocked:ba::f0 bia_f32::blocked:ab::f0_mask2 dst_f32::blocked:ab::f0,attr-scratchpad:user ,,8x10:10x1024,0.0371094
+onednn_verbose,primitive,exec,gpu:0,matmul,jit:gemm:any,undef,src_f32::blocked:ab::f0 wei_f32::blocked:ba::f0 dst_f32::blocked:ab::f0,attr-scratchpad:user ,,8x10:10x64,0.0339355
+onednn_verbose,primitive,exec,gpu:0,matmul,jit:gemm:any,undef,src_f32::blocked:ab::f0 wei_f32::blocked:ba::f0 dst_f32::blocked:ab::f0,attr-scratchpad:user ,,8x64:64x1024,0.0310059
+onednn_verbose,primitive,exec,gpu:0,matmul,jit:gemm:any,undef,src_f32::blocked:ab::f0 wei_f32::blocked:ba::f0 bia_f32::blocked:ab::f0_mask2 dst_f32::blocked:ab::f0,attr-scratchpad:user ,,8x1024:1024x10,0.0449219
+onednn_verbose,primitive,exec,gpu:0,matmul,jit:gemm:any,undef,src_f32::blocked:ab::f0 wei_f32::blocked:ba::f0 dst_f32::blocked:ab::f0,attr-scratchpad:user ,,8x64:64x10,0.0390625
+onednn_verbose,primitive,exec,gpu:0,matmul,jit:gemm:any,undef,src_f32::blocked:ab::f0 wei_f32::blocked:ba::f0 bia_f32::blocked:ab::f0_mask2 dst_f32::blocked:ab::f0,attr-scratchpad:user ,,8x10:10x1024,0.0380859
+onednn_verbose,primitive,exec,gpu:0,matmul,jit:gemm:any,undef,src_f32::blocked:ab::f0 wei_f32::blocked:ba::f0 dst_f32::blocked:ab::f0,attr-scratchpad:user ,,8x10:10x64,0.0339355
+onednn_verbose,primitive,exec,gpu:0,matmul,jit:gemm:any,undef,src_f32::blocked:ab::f0 wei_f32::blocked:ba::f0 dst_f32::blocked:ab::f0,attr-scratchpad:user ,,8x64:64x1024,0.0319824
+onednn_verbose,primitive,exec,gpu:0,matmul,jit:gemm:any,undef,src_f32::blocked:ab::f0 wei_f32::blocked:ba::f0 bia_f32::blocked:ab::f0_mask2 dst_f32::blocked:ab::f0,attr-scratchpad:user ,,8x1024:1024x10,0.045166
+onednn_verbose,primitive,exec,gpu:0,matmul,jit:gemm:any,undef,src_f32::blocked:ab::f0 wei_f32::blocked:ba::f0 dst_f32::blocked:ab::f0,attr-scratchpad:user ,,8x64:64x10,0.0332031
+onednn_verbose,primitive,exec,gpu:0,matmul,jit:gemm:any,undef,src_f32::blocked:ab::f0 wei_f32::blocked:ba::f0 bia_f32::blocked:ab::f0_mask2 dst_f32::blocked:ab::f0,attr-scratchpad:user ,,8x10:10x1024,0.0368652
+onednn_verbose,primitive,exec,gpu:0,matmul,jit:gemm:any,undef,src_f32::blocked:ab::f0 wei_f32::blocked:ba::f0 dst_f32::blocked:ab::f0,attr-scratchpad:user ,,8x10:10x64,0.0332031
+onednn_verbose,primitive,exec,gpu:0,matmul,jit:gemm:any,undef,src_f32::blocked:ab::f0 wei_f32::blocked:ba::f0 dst_f32::blocked:ab::f0,attr-scratchpad:user ,,8x64:64x1024,0.0310059
+onednn_verbose,primitive,exec,gpu:0,matmul,jit:gemm:any,undef,src_f32::blocked:ab::f0 wei_f32::blocked:ba::f0 bia_f32::blocked:ab::f0_mask2 dst_f32::blocked:ab::f0,attr-scratchpad:user ,,8x1024:1024x10,0.0510254
+onednn_verbose,primitive,exec,gpu:0,matmul,jit:gemm:any,undef,src_f32::blocked:ab::f0 wei_f32::blocked:ba::f0 dst_f32::blocked:ab::f0,attr-scratchpad:user ,,8x64:64x10,0.0358887
+onednn_verbose,primitive,exec,gpu:0,matmul,jit:gemm:any,undef,src_f32::blocked:ab::f0 wei_f32::blocked:ba::f0 bia_f32::blocked:ab::f0_mask2 dst_f32::blocked:ab::f0,attr-scratchpad:user ,,8x10:10x1024,0.0380859
+onednn_verbose,primitive,exec,gpu:0,matmul,jit:gemm:any,undef,src_f32::blocked:ab::f0 wei_f32::blocked:ba::f0 dst_f32::blocked:ab::f0,attr-scratchpad:user ,,8x10:10x64,0.0339355
+onednn_verbose,primitive,exec,gpu:0,matmul,jit:gemm:any,undef,src_f32::blocked:ab::f0 wei_f32::blocked:ba::f0 dst_f32::blocked:ab::f0,attr-scratchpad:user ,,8x64:64x1024,0.0310059
+onednn_verbose,primitive,exec,gpu:0,matmul,jit:gemm:any,undef,src_f32::blocked:ab::f0 wei_f32::blocked:ba::f0 bia_f32::blocked:ab::f0_mask2 dst_f32::blocked:ab::f0,attr-scratchpad:user ,,8x1024:1024x10,0.0480957
+STAGE:2023-11-13 23:06:33 1598412:1598412 XPUActivityProfilerController.cpp:271] Completed Stage: Warm Up
+onednn_verbose,primitive,exec,gpu:0,matmul,jit:gemm:any,undef,src_f32::blocked:ab::f0 wei_f32::blocked:ba::f0 dst_f32::blocked:ab::f0,attr-scratchpad:user ,,8x64:64x10,0.313965
+onednn_verbose,primitive,exec,gpu:0,matmul,jit:gemm:any,undef,src_f32::blocked:ab::f0 wei_f32::blocked:ba::f0 bia_f32::blocked:ab::f0_mask2 dst_f32::blocked:ab::f0,attr-scratchpad:user ,,8x10:10x1024,0.332031
+onednn_verbose,primitive,exec,gpu:0,matmul,jit:gemm:any,undef,src_f32::blocked:ab::f0 wei_f32::blocked:ba::f0 dst_f32::blocked:ab::f0,attr-scratchpad:user ,,8x10:10x64,0.291992
+onednn_verbose,primitive,exec,gpu:0,matmul,jit:gemm:any,undef,src_f32::blocked:ab::f0 wei_f32::blocked:ba::f0 dst_f32::blocked:ab::f0,attr-scratchpad:user ,,8x64:64x1024,0.298096
+onednn_verbose,primitive,exec,gpu:0,matmul,jit:gemm:any,undef,src_f32::blocked:ab::f0 wei_f32::blocked:ba::f0 bia_f32::blocked:ab::f0_mask2 dst_f32::blocked:ab::f0,attr-scratchpad:user ,,8x1024:1024x10,0.88501
+STAGE:2023-11-13 23:06:33 1598412:1598412 XPUActivityProfilerController.cpp:278] Completed Stage: Collection
+STAGE:2023-11-13 23:06:33 1598412:1598412 XPUActivityProfilerController.cpp:281] Completed Stage: Post Processing
+======lora_model =====
+target=Embedding(10, 10)
+-----new module
+init lora layer
+---parent=DummyModel(
+  (embedding): Embedding(10, 10)
+  (linear): Linear(in_features=10, out_features=1024, bias=True)
+  (lm_head): Linear(in_features=1024, out_features=10, bias=True)
+)
+---target_name=embedding
+---target=Embedding(10, 10)
+======lora_model =====
+target=Linear(in_features=10, out_features=1024, bias=True)
+-----new module
+init lora layer
+--adapter_name=default
+init lora linear layer
+adapter_name=default
+r=64
+init_lora_weights=True
+---parent=DummyModel(
+  (embedding): Embedding(
+    10, 10
+    (lora_dropout): ModuleDict(
+      (default): Dropout(p=0.1, inplace=False)
+    )
+    (lora_A): ModuleDict()
+    (lora_B): ModuleDict()
+    (lora_embedding_A): ParameterDict(  (default): Parameter containing: [torch.FloatTensor of size 64x10])
+    (lora_embedding_B): ParameterDict(  (default): Parameter containing: [torch.FloatTensor of size 10x64])
+  )
+  (linear): Linear(in_features=10, out_features=1024, bias=True)
+  (lm_head): Linear(in_features=1024, out_features=10, bias=True)
+)
+---target_name=linear
+---target=Linear(in_features=10, out_features=1024, bias=True)
+----n=embedding.weight
+----n=embedding.lora_embedding_A.default
+----n=embedding.lora_embedding_B.default
+----n=linear.weight
+----n=linear.bias
+----n=linear.lora_A.default.weight
+----n=linear.lora_B.default.weight
+----n=lm_head.weight
+----n=lm_head.bias
+---active_adapter=default
+DummyModel(
+  (embedding): Embedding(
+    10, 10
+    (lora_dropout): ModuleDict(
+      (default): Dropout(p=0.1, inplace=False)
+    )
+    (lora_A): ModuleDict()
+    (lora_B): ModuleDict()
+    (lora_embedding_A): ParameterDict(  (default): Parameter containing: [torch.FloatTensor of size 64x10])
+    (lora_embedding_B): ParameterDict(  (default): Parameter containing: [torch.FloatTensor of size 10x64])
+  )
+  (linear): Linear(
+    in_features=10, out_features=1024, bias=True
+    (lora_dropout): ModuleDict(
+      (default): Dropout(p=0.1, inplace=False)
+    )
+    (lora_A): ModuleDict(
+      (default): Linear(in_features=10, out_features=64, bias=False)
+    )
+    (lora_B): ModuleDict(
+      (default): Linear(in_features=64, out_features=1024, bias=False)
+    )
+    (lora_embedding_A): ParameterDict()
+    (lora_embedding_B): ParameterDict()
+  )
+  (lm_head): Linear(in_features=1024, out_features=10, bias=True)
+)
+--flag3---
+----linear
+--flag3---
+----linear
+--flag3---
+----linear
+--flag3---
+----linear
+--flag3---
+----linear
+--flag3---
+----linear
+--flag3---
+----linear
+--flag3---
+----linear
+--flag3---
+----linear
+--flag3---
+----linear
+using trace
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+                                                   Name    Self CPU %      Self CPU   CPU total %     CPU total  CPU time avg      Self XPU    Self XPU %     XPU total  XPU time avg    # of Calls  
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+at::AtenIpexTypeXPU::dpcpp_q_barrier(sycl::_V1::queu...         0.00%       0.000us         0.00%       0.000us       0.000us      70.000us        60.34%      70.000us       1.667us            42  
+                                               aten::mm         6.80%       1.846ms         8.17%       2.219ms     739.667us      26.000us        22.41%      26.000us       8.667us             3  
+                                            gemm_kernel         0.00%       0.000us         0.00%       0.000us       0.000us      26.000us        22.41%      26.000us       5.200us             5  
+                                            aten::addmm         6.65%       1.806ms        13.82%       3.752ms     938.000us      16.000us        13.79%      32.000us       8.000us             4  
+                                     aten::index_select         0.81%     220.000us         1.44%     390.000us     195.000us       6.000us         5.17%       9.000us       4.500us             2  
+IndexKernel<IndexKernelConfig<xpu::dpcpp::detail::Te...         0.00%       0.000us         0.00%       0.000us       0.000us       6.000us         5.17%       6.000us       3.000us             2  
+                                              aten::mul         1.38%     375.000us         1.43%     387.000us     193.500us       5.000us         4.31%       5.000us       2.500us             2  
+at::AtenIpexTypeXPU::launch_vectorized_kernel<at::At...         0.00%       0.000us         0.00%       0.000us       0.000us       5.000us         4.31%       5.000us       2.500us             2  
+                                             aten::add_         1.09%     295.000us         1.10%     299.000us     149.500us       4.000us         3.45%       4.000us       2.000us             2  
+at::AtenIpexTypeXPU::launch_vectorized_kernel<at::At...         0.00%       0.000us         0.00%       0.000us       0.000us       4.000us         3.45%       4.000us       2.000us             2  
+                                            aten::copy_         0.49%     132.000us         0.50%     136.000us     136.000us       3.000us         2.59%       3.000us       3.000us             1  
+at::AtenIpexTypeXPU::launch_legacy_kernel<at::AtenIp...         0.00%       0.000us         0.00%       0.000us       0.000us       3.000us         2.59%       3.000us       3.000us             1  
+                                   aten::native_dropout         1.19%     324.000us         1.26%     342.000us     342.000us       2.000us         1.72%       2.000us       2.000us             1  
+at::AtenIpexTypeXPU::impl::dropout_template<bool>(xp...         0.00%       0.000us         0.00%       0.000us       0.000us       2.000us         1.72%       2.000us       2.000us             1  
+                                          ProfilerStep*         1.47%     400.000us        22.37%       6.072ms       6.072ms       0.000us         0.00%      62.000us      62.000us             1  
+                                        aten::embedding         0.07%      18.000us         1.52%     413.000us     206.500us       0.000us         0.00%       9.000us       4.500us             2  
+                                          aten::reshape         0.01%       3.000us         0.05%      14.000us       3.500us       0.000us         0.00%       0.000us       0.000us             4  
+                                             aten::view         0.11%      29.000us         0.11%      29.000us       2.636us       0.000us         0.00%       0.000us       0.000us            11  
+                                            aten::empty         0.06%      16.000us         0.06%      16.000us       1.600us       0.000us         0.00%       0.000us       0.000us            10  
+                                          aten::resize_         0.03%       9.000us         0.03%       9.000us       1.286us       0.000us         0.00%       0.000us       0.000us             7  
+                               zeKernelSetArgumentValue         0.00%       1.000us         0.00%       1.000us       0.009us       0.000us         0.00%       0.000us       0.000us           109  
+                                   zeKernelSetGroupSize         0.00%       0.000us         0.00%       0.000us       0.000us       0.000us         0.00%       0.000us       0.000us            55  
+                                       zeEventHostReset         0.00%       0.000us         0.00%       0.000us       0.000us       0.000us         0.00%       0.000us       0.000us            23  
+                        zeCommandListAppendLaunchKernel        72.72%      19.740ms        72.72%      19.740ms     358.909us       0.000us         0.00%       0.000us       0.000us            55  
+                                          aten::numpy_T         0.01%       3.000us         0.04%      12.000us       6.000us       0.000us         0.00%       0.000us       0.000us             2  
+                                          aten::permute         0.03%       8.000us         0.03%       9.000us       4.500us       0.000us         0.00%       0.000us       0.000us             2  
+                                       aten::as_strided         0.02%       6.000us         0.02%       6.000us       0.750us       0.000us         0.00%       0.000us       0.000us             8  
+                                       aten::contiguous         0.03%       8.000us         0.57%     156.000us     156.000us       0.000us         0.00%       3.000us       3.000us             1  
+                                            aten::clone         0.04%      10.000us         0.55%     148.000us     148.000us       0.000us         0.00%       3.000us       3.000us             1  
+                                       aten::empty_like         0.04%      11.000us         0.06%      16.000us       5.333us       0.000us         0.00%       0.000us       0.000us             3  
+                                          zeEventCreate         0.01%       3.000us         0.01%       3.000us       0.094us       0.000us         0.00%       0.000us       0.000us            32  
+                                           aten::matmul         0.08%      23.000us         8.33%       2.260ms     753.333us       0.000us         0.00%      26.000us       8.667us             3  
+                                zeMemGetAllocProperties         0.00%       0.000us         0.00%       0.000us       0.000us       0.000us         0.00%       0.000us       0.000us            18  
+                                         zeModuleCreate         0.55%     148.000us         0.55%     148.000us     148.000us       0.000us         0.00%       0.000us       0.000us             1  
+                                  zeModuleGetProperties         0.00%       0.000us         0.00%       0.000us       0.000us       0.000us         0.00%       0.000us       0.000us             1  
+                                         zeKernelCreate         0.01%       2.000us         0.01%       2.000us       2.000us       0.000us         0.00%       0.000us       0.000us             1  
+                              zeKernelSetIndirectAccess         0.00%       0.000us         0.00%       0.000us       0.000us       0.000us         0.00%       0.000us       0.000us             1  
+                                  zeKernelGetProperties         0.00%       0.000us         0.00%       0.000us       0.000us       0.000us         0.00%       0.000us       0.000us             1  
+                               zeKernelSuggestGroupSize         0.00%       1.000us         0.00%       1.000us       0.023us       0.000us         0.00%       0.000us       0.000us            43  
+                                 zeEventHostSynchronize         2.21%     600.000us         2.21%     600.000us      14.286us       0.000us         0.00%       0.000us       0.000us            42  
+                                     aten::_unsafe_view         0.04%      11.000us         0.04%      11.000us       3.667us       0.000us         0.00%       0.000us       0.000us             3  
+                                           aten::linear         0.08%      21.000us        11.78%       3.198ms     799.500us       0.000us         0.00%      34.000us       8.500us             4  
+                                                aten::t         0.05%      13.000us         0.09%      24.000us       6.000us       0.000us         0.00%       0.000us       0.000us             4  
+                                        aten::transpose         0.03%       9.000us         0.05%      14.000us       3.500us       0.000us         0.00%       0.000us       0.000us             4  
+                                           aten::expand         0.01%       3.000us         0.01%       3.000us       1.500us       0.000us         0.00%       0.000us       0.000us             2  
+                                               aten::to         0.00%       0.000us         0.00%       0.000us       0.000us       0.000us         0.00%       0.000us       0.000us             2  
+                                          aten::dropout         0.01%       4.000us         1.27%     346.000us     346.000us       0.000us         0.00%       2.000us       2.000us             1  
+                                    aten::empty_strided         0.02%       5.000us         0.02%       5.000us       2.500us       0.000us         0.00%       0.000us       0.000us             2  
+                           zeCommandListCreateImmediate         3.85%       1.044ms         3.85%       1.044ms      33.677us       0.000us         0.00%       0.000us       0.000us            31  
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+Self CPU time total: 27.147ms
+Self XPU time total: 116.000us
+
