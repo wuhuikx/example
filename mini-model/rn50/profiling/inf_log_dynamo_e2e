@@ -1,0 +1,33 @@
+/home/zhuhong/miniconda3/envs/wuhui_master/lib/python3.9/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/zhuhong/miniconda3/envs/wuhui_master/lib/python3.9/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet50_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet50_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+/home/zhuhong/miniconda3/envs/wuhui_master/lib/python3.9/site-packages/torch/overrides.py:110: UserWarning: 'has_cuda' is deprecated, please use 'torch.backends.cuda.is_built()'
+  torch.has_cuda,
+/home/zhuhong/miniconda3/envs/wuhui_master/lib/python3.9/site-packages/torch/overrides.py:111: UserWarning: 'has_cudnn' is deprecated, please use 'torch.backends.cudnn.is_available()'
+  torch.has_cudnn,
+/home/zhuhong/miniconda3/envs/wuhui_master/lib/python3.9/site-packages/torch/overrides.py:117: UserWarning: 'has_mps' is deprecated, please use 'torch.backends.mps.is_built()'
+  torch.has_mps,
+/home/zhuhong/miniconda3/envs/wuhui_master/lib/python3.9/site-packages/torch/overrides.py:118: UserWarning: 'has_mkldnn' is deprecated, please use 'torch.backends.mkldnn.is_available()'
+  torch.has_mkldnn,
+need_profile=False
+---latency=0.09048986434936523 s
+---throughput=11316.184496050502 fps
+---latency=0.09047317504882812 s
+---throughput=11318.27195682422 fps
+---latency=0.09102201461791992 s
+---throughput=11250.025659159608 fps
+---latency=0.09167027473449707 s
+---throughput=11170.469412967206 fps
+---latency=0.09153985977172852 s
+---throughput=11186.383751881775 fps
+---latency=0.09156843026479085 s
+---throughput=11182.893460539535 fps
+---latency=0.0915452071598598 s
+---throughput=11185.730326786539 fps
+---latency=0.0915386974811554 s
+---throughput=11186.525788296318 fps
+---latency=0.09153707822163899 s
+---throughput=11186.72367410052 fps
+---latency=0.09143879413604736 s
+---throughput=11198.74785833724 fps

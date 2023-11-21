@@ -97,7 +97,7 @@ with profiler_setup(need_profile) as prof:
 
     if need_profile:
         print(str(prof.key_averages().table(sort_by="self_xpu_time_total")))
-        torch.save(prof.key_averages().table(sort_by="self_xpu_time_total"), 'profiling.pt')
-        prof.export_chrome_trace('./profile_trace.json')
+        torch.save(prof.key_averages().table(sort_by="self_xpu_time_total"), 'train_profiling.pt')
+        prof.export_chrome_trace('./train_profile_trace.json')
     
 
