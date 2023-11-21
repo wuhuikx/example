@@ -77,6 +77,9 @@ with profiler_setup(need_profile) as prof:
         start_time = time.time()
         print("input_ids={}".format(input_ids))
         print("segment_ids={}".format(segment_ids))
+        print("input_mask={}".format(input_mask))
+        print("masked_lm_labels={}".format(masked_lm_labels))
+        print("next_sentence_labels={}".format(next_sentence_labels))
         # input data H2D
         input_ids = input_ids.to(device)
         segment_ids = segment_ids.to(device)
