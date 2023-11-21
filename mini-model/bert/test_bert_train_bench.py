@@ -42,13 +42,6 @@ optimizer = torch.optim.AdamW(model.parameters(), lr=5e-5)
 # enable ipex optimize for performance acceleration
 model, optimizer = torch.xpu.optimize(model=model, optimizer=optimizer, dtype=datatype)
 
-# add profiler
-def trace_handle(prof):
-    print("using trace")
-    print(str(prof.key_averages().table(sort_by="self_xpu_time_total")))
-    torch.save(prof.key_averages().table(sort_by="self_xpu_time_total"), 'profiling.pt')
-    prof.export_chrome_trace('./profile_trace.json')
-
 import contextlib
 def profiler_setup(need_profile):
     print("---need_profile={}".format(need_profile))
@@ -102,8 +95,8 @@ with profiler_setup(need_profile) as prof:
         loss.backward()
 
         # weight update
-        optimizer.step()
         optimizer.zero_grad()
+        optimizer.step()
         torch.xpu.synchronize()
         end_time = time.time()
         if step == running_step:
