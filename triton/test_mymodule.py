@@ -1,7 +1,13 @@
 import torch
 import intel_extension_for_pytorch
+import torch._dynamo
+from torch._inductor import config
+ 
+from torch._dynamo.backends.registry import _BACKENDS, list_backends
+from torch._dynamo.backends.common import fake_tensor_unsupported
+from typing import List
 
-def my_compiler(gm: torch.fx,GraphMode):
+def my_compiler(gm: torch.fx.GraphModule, example_inputs: List[torch.Tensor]):
     print("FX graph:")
     print(gm.graph)
     print("custom backend called with FX graph:")
